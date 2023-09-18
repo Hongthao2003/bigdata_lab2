@@ -1,0 +1,8 @@
+Kiến trúc của HDFS là master / slave, một HDFS Cluster sẽ luôn bao gồm 1 NameNode. NameNode này là 1 master server và nó có nhiệm vụ quản lý cho hệ thống tập tin và điều chỉnh các truy cập đến những tập tin khác.
+Trong một HDFS, 1 tập tin lớn sẽ được chia thành 1 hoặc nhiều khối, những khối này đều sẽ được lưu trữ trong 1 tập các DataNodes. 
+NameNode có tác vụ chính là đóng, mở và đổi tên cho các tập tin, thư mục. Ngoài ra, nó còn điều chỉnh cho các truy cập đến hệ thống tập tin. Trong khi đó, DataNode có tác vụ là ghi, đọc vào hệ thống tập tin; nó còn có nhiệm vụ tạo, xóa, nhân rộng các dữ liệu dựa trên chỉ dẫn của NameNode.
+
+Ví dụ: 
+trong công ty sẽ các phòng như phòng tài chính, phòng marketing, phòng nhân sự,...mỗi phòng đều có các nhiệm vụ riêng giúp các nhân viên hoặc khách hàng dễ dàng tìm được nơi mình cần khi sử lý công việc 
+yarn: trưởng phòng kĩ thuật quản lý các nhân viên dưới cấp của mình, phân công công việc cho họ, chịu trách nhiệm khi họ làm sai, hỗ trợ khi các nhân viên không biết .
+
